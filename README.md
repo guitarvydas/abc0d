@@ -12,4 +12,8 @@ See other examples for more interesting languages.
 
 This example shows the very basics of parsing and transpiling languages. 
 
-The most interesting part is emitting Lisp (which will be related to emitting WASM). Since the syntax of Lisp is recursive, we need to write the parsing rules in a recursive manner, basically avoiding the built-in PEG opeators for iteration `*` and `+`. Again, see other examples for deeper insights...
+The most interesting part is emitting Lisp (which will be related to emitting WASM). Since the syntax of Lisp is recursive, we need to write the parsing rules in a recursive manner, basically avoiding the built-in PEG opeators for iteration `*` and `+`. 
+
+Again, see other examples for deeper insights...
+
+For example, see the arith0d project.

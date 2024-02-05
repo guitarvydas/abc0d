@@ -2,17 +2,18 @@ LIBSRC=0D/odin/std
 ODIN_FLAGS ?= -debug -o:none
 D2J=0d/das2json/das2json
 
-run: abc transpile.drawio.json
-	./abc0d main abc.drawio $(LIBSRC)/transpile.drawio
+run: abc0d transpile.drawio.json
+	./abc0d main abc0d.drawio $(LIBSRC)/transpile.drawio
 
-abc: abc.drawio.json
+abc0d: abc0d.drawio.json
 	odin build . $(ODIN_FLAGS)
 
-abc.drawio.json: abc.drawio transpile.drawio.json
-	$(D2J) abc.drawio
+abc0d.drawio.json: abc0d.drawio transpile.drawio.json
+	$(D2J) abc0d.drawio
 
 transpile.drawio.json: $(LIBSRC)/transpile.drawio
 	$(D2J) $(LIBSRC)/transpile.drawio
 
 clean:
-	rm -rf abc abc.dSYM
+	rm -rf abc0d abc0d.dSYM *~ *.json
+
