@@ -1,5 +1,4 @@
-# A simple example of transpiling a trivial language to, both, Javascript and Common Lisp.
-
+# A simple example of using 0D to transpile a trivial language to, both, Javascript and Common Lisp.
 
 To keep things simple, this language - ABC - is defined as:
 - an Atom or an Expression
@@ -17,3 +16,5 @@ The most interesting part is emitting Lisp (which will be related to emitting WA
 Again, see other examples for deeper insights...
 
 For example, see the arith0d project.
+
+![](doc/abc0d-main.drawio.svg)
